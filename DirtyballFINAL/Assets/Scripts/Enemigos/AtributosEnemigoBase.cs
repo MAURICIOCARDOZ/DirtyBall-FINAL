@@ -66,24 +66,6 @@ public class AtributosEnemigoBase : MonoBehaviour
         GameObject armaPrefab = armas[indiceArma];
 
 
-        for (int i = 0; i < HandSocket.childCount; i++)
-        {
-            Destroy(HandSocket.GetChild(i).gameObject);
-        }
-|          
-
-        // 5. Obtiene el script AtributosArma de la nueva arma
-        ArmasClase atributosArma = nuevaArmaGO.GetComponent<ArmasClase>();
-
-        if (atributosArma != null)
-        {
-            Debug.Log("HUBI ARMA");
-            Debug.Log(atributosArma.daño);
-            // 6. Asigna el daño del arma a la variable del enemigo
-            this.daño = atributosArma.daño; // Asigna el daño del arma a la variable 'daño' del enemigo
-            nuevaArmaGO.SetActive(true);
-
-        }
+        armaPrefab.SetActive(true);
     }
-
 }
