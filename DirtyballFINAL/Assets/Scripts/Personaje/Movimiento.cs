@@ -8,6 +8,7 @@ public class Movimiento : MonoBehaviour
     [SerializeField] private float velocidadRotacion = 10f;
     [SerializeField] public float fuerzaSalto = 5f;
     public float gravedad = -9.81f;
+    public Animator animator;
 
 
     private CharacterController characterController;
@@ -31,6 +32,10 @@ public class Movimiento : MonoBehaviour
 
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
+
+        animator.SetFloat("Velx", moveHorizontal);
+        animator.SetFloat("Vely", moveVertical);
+
 
         Vector3 adelanteCamara = camara.forward;
         Vector3 derechaCamara = camara.right;
