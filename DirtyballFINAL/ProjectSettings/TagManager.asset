@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Jugador
   - Arma
+  - Door
   layers:
   - Default
   - TransparentFX
