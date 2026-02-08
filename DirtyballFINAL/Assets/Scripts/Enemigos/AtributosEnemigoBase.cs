@@ -68,4 +68,10 @@ public class AtributosEnemigoBase : MonoBehaviour
 
         armaPrefab.SetActive(true);
     }
+
+    public void Atacar(GameObject player)
+    {
+       player.GetComponent<AtributosPersonaje>().RecibirDano(daño);
+
+    }
 }

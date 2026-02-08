@@ -30,4 +30,10 @@ public class PerseguirObjetivo : MonoBehaviour
             }
         }
     }
+
+    void Atacar() 
+    { 
+        
+    }
+   
 }

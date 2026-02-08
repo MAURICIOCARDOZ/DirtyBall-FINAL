@@ -1,8 +1,24 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class ArmasClase : MonoBehaviour
 {
-    public int rango = 1;
-    public int daño = 1;
-    public float cooldown = 1f;
+
+    private Collider colliderArma;
+    public AtributosEnemigoBase scriptEnemigo;
+
+
+    private void Start()
+    {
+        colliderArma = GetComponent<Collider>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("COLISION CON BOTELLA");
+        if (other.CompareTag("Player")) {
+           scriptEnemigo.Atacar(other.gameObject);
+        }
+    }
 }
+
