@@ -441,6 +441,7 @@
 "Assets/Scripts/Enemigos/spawner.cs"
 "Assets/Scripts/Entorno/Puerta.cs"
 "Assets/Scripts/Entorno/ScreenFader.cs"
+"Assets/Scripts/MenuPrincipal/Elegirnivel.cs"
 "Assets/Scripts/MenuPrincipal/MenuPrincipal.cs"
 "Assets/Scripts/Personaje/AtributosPersonaje.cs"
 "Assets/Scripts/Personaje/Movimiento.cs"
